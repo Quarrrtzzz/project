@@ -1,21 +1,21 @@
-"use strict";
-/* const category ='Dota2';
+'use strict';
 
-console.log(`https://someurl.com/${category}/5`); */
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', ''),
+      a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
+                        
 
-const user = "Dmitriy";
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-alert(`Привет, ${user}`);
-
-console.log(4 + "5");
-
-
-
-/* incr++;
-decr--; */
-
-console.log(incr);
-console.log(decr);
-let incr = 10,
-    decr = 10;
+console.log(personalMovieDB);
